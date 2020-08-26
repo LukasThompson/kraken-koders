@@ -1,30 +1,17 @@
 import React from "react";
 import "./App.css";
 import NavbarPage from "./components/NavBarPage";
-<<<<<<< HEAD
-import { MDBContainer, MDBCardGroup } from "mdbreact";
-import ProjectCardPage from "./components/ProjectCardPage";
-import JumbotronPage from "./components/JumbotronPage";
-=======
 import Footer from "./components/Footer";
->>>>>>> master
 
-function App() {
+class App extends React.Component {
+  render(){
   return (
-    <div className="App">
+    <React.Fragment>
       <NavbarPage />
-      <MDBContainer>
-        <JumbotronPage />
-        <MDBCardGroup>
-          <ProjectCardPage />
-          <ProjectCardPage />
-          <ProjectCardPage />
-        </MDBCardGroup>
-      </MDBContainer>
-      Welcome to Kraken Koders bitch!
-      <Footer/>
-    </div>
+      <Footer />
+    </React.Fragment>
   );
+  }
 }
 
 export default App;
