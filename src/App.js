@@ -1,27 +1,17 @@
 import React from "react";
 import "./App.css";
 import NavbarPage from "./components/NavBarPage";
-import { MDBContainer, MDBCardGroup } from "mdbreact";
-import ProjectCardPage from "./components/ProjectCardPage";
-import JumbotronPage from "./components/JumbotronPage";
 import Footer from "./components/Footer";
 
-function App() {
+class App extends React.Component {
+  render(){
   return (
-    <div className="App">
+    <React.Fragment>
       <NavbarPage />
-      Welcome to Kraken Koders!
-      <MDBContainer>
-        <JumbotronPage />
-        <MDBCardGroup>
-          <ProjectCardPage />
-          <ProjectCardPage />
-          <ProjectCardPage />
-        </MDBCardGroup>
-      </MDBContainer>
-      <Footer/>
-    </div>
+      <Footer />
+    </React.Fragment>
   );
+  }
 }
 
 export default App;

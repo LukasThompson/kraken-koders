@@ -40,3 +40,46 @@
 .navbar {
   background-color: #f6f1db;
 }
+
+.footerContainer {
+  position: "relative" !important;
+  bottom: "0px" !important;
+}
+
+.footerImgContainer {
+  height: 200px;
+  width: 225px;
+}
+
+.footerLogo {
+  margin-left: 2rem;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.footerTextBox {
+  margin-left: 50px;
+}
+
+.footerTitle {
+  color: black;
+  font-weight: bold;
+}
+
+.footerContent {
+  color: black;
+  font-weight: bolder;
+  height: 8rem;
+}
+
+.myFooterLink {
+  color: black !important;
+  font-weight: bolder !important;
+}
+
+.requestFormBody {
+  margin-left: 17.5rem;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+}
