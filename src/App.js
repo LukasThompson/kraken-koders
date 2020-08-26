@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <NavbarPage />
-      Welcome to Kraken Koders bitch!
+      Welcome to Kraken Koders!
       <Footer/>
     </div>
   );
