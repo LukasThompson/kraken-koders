@@ -13,7 +13,21 @@ import {
   MDBDropdownMenu,
   MDBDropdownItem,
 } from "mdbreact";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route} from "react-router-dom";
+import RequestForm from "./RequestForm";
+import HomePage from "./HomePage";
+
+const Form = () => (
+  <React.Fragment>
+    <RequestForm />
+  </React.Fragment>
+);
+
+const Home = () => (
+  <React.Fragment>
+    <HomePage />
+  </React.Fragment>
+)
 
 class NavbarPage extends Component {
   state = {
@@ -39,8 +53,8 @@ class NavbarPage extends Component {
           <MDBNavbarToggler onClick={this.toggleCollapse} />
           <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
             <MDBNavbarNav left>
-              <MDBNavItem active>
-                <MDBNavLink to="#!">Home</MDBNavLink>
+              <MDBNavItem>
+                <MDBNavLink to="/">Home</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
                 <MDBNavLink to="#!">About</MDBNavLink>
@@ -61,6 +75,9 @@ class NavbarPage extends Component {
                   </MDBDropdownMenu>
                 </MDBDropdown>
               </MDBNavItem>
+              <MDBNavItem>
+                <MDBNavLink to="/requestForm">Request Our Services</MDBNavLink>
+              </MDBNavItem>
             </MDBNavbarNav>
             <MDBNavbarNav right>
               <MDBNavItem>
@@ -78,6 +95,8 @@ class NavbarPage extends Component {
             </MDBNavbarNav>
           </MDBCollapse>
         </MDBNavbar>
+        <Route path="/RequestForm" exact component={Form} />
+        <Route path="/" exact component={Home} />
       </Router>
     );
   }
