@@ -9,14 +9,14 @@ import {
   MDBCol,
 } from "mdbreact";
 
-const ProjectCardPage = () => {
+const ProjectCardPage = (props) => {
   return (
     <MDBCol>
-      <MDBCard style={{ width: "22rem" }}>
-        <MDBCardImage className="img-fluid" src="media\kraken.jpg" waves />
+      <MDBCard style={{ width: "18rem" }}>
+        <MDBCardImage className="img-fluid" src={props.project.imgSrc} waves />
         <MDBCardBody>
-          <MDBCardTitle>Project Title</MDBCardTitle>
-          <MDBCardText>Description of project.</MDBCardText>
+          <MDBCardTitle>{props.project.name}</MDBCardTitle>
+          <MDBCardText>{props.project.description}</MDBCardText>
           <MDBBtn color="deep-orange" href="#">
             Go To Project
           </MDBBtn>

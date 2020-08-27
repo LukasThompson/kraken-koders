@@ -13,7 +13,7 @@ import {
   MDBDropdownMenu,
   MDBDropdownItem,
 } from "mdbreact";
-import { BrowserRouter as Router, Route} from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import RequestForm from "./RequestForm";
 import HomePage from "./HomePage";
 
@@ -23,11 +23,11 @@ const Form = () => (
   </React.Fragment>
 );
 
-const Home = () => (
+const Home = (props) => (
   <React.Fragment>
-    <HomePage />
+    <HomePage projects={props.projects} />
   </React.Fragment>
-)
+);
 
 class NavbarPage extends Component {
   state = {
