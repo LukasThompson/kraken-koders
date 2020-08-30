@@ -1,13 +1,15 @@
 import React from "react";
-import { MDBContainer, MDBCardGroup } from "mdbreact";
+import { MDBContainer, MDBCardGroup, MDBCard } from "mdbreact";
 import ProjectCardPage from "./ProjectCardPage";
 import JumbotronPage from "./JumbotronPage";
+import TeamMemberCard from "./TeamMemberCard";
 
 class HomePage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       projects: [],
+      team: [],
     };
   }
 
@@ -15,8 +17,13 @@ class HomePage extends React.Component {
     return <ProjectCardPage project={project} key={project.id} />;
   };
 
+  mapTeam = (member) => {
+    return <TeamMemberCard member={member} key={member.id} />;
+  };
+
   onLoad = () => {
     this.setState((prevState) => {
+      // Will replace with DB Call
       let projectsArray = [
         {
           name: "Space Game Clone",
@@ -38,9 +45,38 @@ class HomePage extends React.Component {
         },
       ];
       let mappedProject = projectsArray.map(this.mapProjects);
+
+      let teamArray = [
+        {
+          id: 1,
+          name: "Lukas Thompson",
+          imgSrc: "media/MEBleh.png",
+          position: "Developer",
+          linkedIn: "https://www.linkedin.com/in/lukas-thompson-2b7b611aa/",
+          github: "https://github.com/LukasThompson",
+        },
+        {
+          id: 2,
+          name: "Rob Rukavina",
+          imgSrc: "media/comingsoon.jpg",
+          position: "Developer",
+          linkedIn: "https://www.linkedin.com/company/kraken-koders/",
+          github: "https://github.com/",
+        },
+        {
+          id: 3,
+          name: "Patrick Yarbourgh",
+          imgSrc: "media/comingsoon.jpg",
+          position: "Jr Developer",
+          linkedIn: "https://www.linkedin.com/company/kraken-koders/",
+          github: "https://github.com/",
+        },
+      ];
+      let mappedTeam = teamArray.map(this.mapTeam);
       return {
         ...prevState,
         projects: mappedProject,
+        team: mappedTeam,
       };
     });
   };
@@ -56,25 +92,37 @@ class HomePage extends React.Component {
           <MDBContainer>
             <JumbotronPage />
             <center>
-              <h1>About Us</h1>
-              <p>
-                Kraken Koders develop professional custom applications for
-                websites, games, and more. We specialize in being the best for
-                our customers and the products they desire. If you are on a
-                tight deadline let Kraken Koders help you and bring you a top of
-                the line product to satisfy your needs.
-              </p>
-              <p>
-                With more than 5 years on the web and 20 years of experience
-                working with computers. We have developed applications ranging
-                from very simple, to extremely complex. No matter what your
-                development needs are, Kraken Koders can make the magic happen.
-              </p>
-              <br />
               <h1>Our Projects</h1>
               <br />
               <MDBCardGroup>{this.state.projects}</MDBCardGroup>
-              <hr />
+              <br />
+              <img src="media/kraken.jpg" alt="kraken break" />
+              <br />
+              <MDBContainer>
+                <MDBCard>
+                  <br />
+                  <h1>Meet The Team!</h1>
+                  <MDBCardGroup>{this.state.team}</MDBCardGroup>
+                  <h1>About Us</h1>
+                  <MDBContainer style={{ width: "75%" }}>
+                    <p>
+                      Kraken Koders develop professional custom applications for
+                      websites, games, and more. We specialize in being the best
+                      for our customers and the products they desire. If you are
+                      on a tight deadline let Kraken Koders help you and bring
+                      you a top of the line product to satisfy your needs.
+                    </p>
+                    <p>
+                      With more than 5 years on the web and 20 years of
+                      experience working with computers. We have developed
+                      applications ranging from very simple, to extremely
+                      complex. No matter what your development needs are, Kraken
+                      Koders can make the magic happen.
+                    </p>
+                  </MDBContainer>
+                  <br />
+                </MDBCard>
+              </MDBContainer>
             </center>
           </MDBContainer>
         </div>
