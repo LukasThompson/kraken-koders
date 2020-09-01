@@ -13,16 +13,6 @@ class RequestForm extends React.Component {
       },
   }}
 
-  componentDidMount = () => {
-    this.setState((prevState) => {
-      const newState = {
-        ...prevState,
-        hasMadeRequest: true,
-      };
-      return newState;
-    });
-  }
-
   render(){
     return (
     <React.Fragment>
