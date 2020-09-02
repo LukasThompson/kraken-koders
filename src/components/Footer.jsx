@@ -47,7 +47,7 @@ const Footer = () => {
                   {" "}
                   <MDBIcon fab icon="github-square" size="3x" />
                 </a>
-                <div className="damnDiscordIconWrapper" style={{ marginTop: "2px" }}>
+                <div className="damnDiscordIconWrapper" style={{ marginTop: "3px" }}>
                 <a className="myFooterLink" href="#!" >
                   {" "}
                   <MDBIcon fab icon="discord" size="3x" />
