@@ -30,8 +30,8 @@ const Footer = () => {
             </MDBCol>
             <MDBCol md="2"></MDBCol>
             <MDBCol md="2">
-              <h5 className="footerTitle">Connect With Us! </h5>
-              <div className="footerLinkList">
+              <h5 className="footerTitle">Connect With Us!</h5>
+              <div className="footerLinkList row">
                 <a
                   className="myFooterLink"
                   href="https://www.linkedin.com/company/kraken-koders/"
@@ -47,6 +47,12 @@ const Footer = () => {
                   {" "}
                   <MDBIcon fab icon="github-square" size="3x" />
                 </a>
+                <div className="damnDiscordIconWrapper" style={{ marginTop: "3px" }}>
+                <a className="myFooterLink" href="#!" >
+                  {" "}
+                  <MDBIcon fab icon="discord" size="3x" />
+                </a>
+                </div>
               </div>
             </MDBCol>
           </MDBRow>

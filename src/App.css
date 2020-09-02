@@ -78,6 +78,10 @@
   font-weight: bolder !important;
 }
 
+.footerLinkList {
+ padding-left: 18px;
+}
+
 .requestFormBody {
   margin-left: 17.5rem;
   margin-top: 3rem;

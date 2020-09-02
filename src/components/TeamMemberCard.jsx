@@ -31,6 +31,12 @@ function TeamMemberCard(props) {
               {" "}
               <MDBIcon fab icon="github-square" size="3x" />
             </a>
+            <div className="damnDiscordIconWrapper" style={{marginTop: "4px" }}>
+                <a className="myFooterLink" href="#!" >
+                  {" "}
+                  <MDBIcon fab icon="discord" size="3x" />
+                </a>
+                </div>
           </MDBCardText>
         </MDBCardBody>
       </MDBCard>
