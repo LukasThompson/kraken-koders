@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Lukas Thompson",
+    "imgSrc": "media/MEBleh.png",
+    "position": "Developer",
+    "linkedIn": "https://www.linkedin.com/in/lukas-thompson-2b7b611aa/",
+    "github": "https://github.com/LukasThompson",
+    "profile": "I graduated in 2017 with my Associate of Applied Science in Computer programming and Systems Design. From there I've used tons of resources to learn about C# and Unity game development. In my spare time I'm using my programming knowledge to learn how to create things using systems such as Arduino and Raspberry Pi."
+  },
+  {
+    "id": 2,
+    "name": "Rob Rukavina",
+    "imgSrc": "media/comingsoon.jpg",
+    "position": "Developer",
+    "linkedIn": "https://www.linkedin.com/company/kraken-koders/",
+    "github": "https://github.com/",
+    "profile": ""
+  },
+  {
+    "id": 3,
+    "name": "Patrick Yarbourgh",
+    "imgSrc": "media/comingsoon.jpg",
+    "position": "Sales / Jr Developer",
+    "linkedIn": "https://www.linkedin.com/company/kraken-koders/",
+    "github": "https://github.com/",
+    "profile": ""
+  }
+]
