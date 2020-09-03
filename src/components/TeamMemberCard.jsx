@@ -20,7 +20,10 @@ function TeamMemberCard(props) {
         />
         <MDBCardBody>
           <MDBCardTitle>{props.member.name}</MDBCardTitle>
-          <MDBCardText>{props.member.position}</MDBCardText>
+          <MDBCardText>
+            <h5>{props.member.position}</h5>
+          </MDBCardText>
+          <MDBCardText>{props.member.profile}</MDBCardText>
           <MDBCardText>
             <a className="myFooterLink" href={props.member.linkedIn}>
               {" "}

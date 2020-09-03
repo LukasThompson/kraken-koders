@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Space Game Clone",
+    "description": "Unity3D - C#",
+    "imgSrc": "media/SpaceGame.png",
+    "id": 1
+  },
+  {
+    "name": "Coming Soon",
+    "description": "Coming Soon",
+    "imgSrc": "media/comingsoon.jpg",
+    "id": 2
+  },
+  {
+    "name": "Coming Soon",
+    "description": "Coming Soon",
+    "imgSrc": "media/comingsoon.jpg",
+    "id": 3
+  }
+]
