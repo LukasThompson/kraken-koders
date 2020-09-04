@@ -97,6 +97,7 @@ class HomePage extends React.Component {
           github: "https://github.com/",
           profile: "",
         },
+        // Still need Patrick's info
         {
           id: 3,
           name: "Patrick Yarbourgh",
