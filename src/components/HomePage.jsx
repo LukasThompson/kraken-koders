@@ -58,11 +58,12 @@ class HomePage extends React.Component {
         {
           id: 2,
           name: "Rob Rukavina",
-          imgSrc: "media/comingsoon.jpg",
+          imgSrc: "media/RobR.jpg",
           position: "Developer",
-          linkedIn: "https://www.linkedin.com/company/kraken-koders/",
-          github: "https://github.com/",
+          linkedIn: "https://www.linkedin.com/in/robert-rukavina-9bb219187/",
+          github: "https://github.com/RobRukavina",
         },
+        // Still need Patrick's info
         {
           id: 3,
           name: "Patrick Yarbourgh",

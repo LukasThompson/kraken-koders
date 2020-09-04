@@ -39,16 +39,22 @@ const Footer = () => {
                   {" "}
                   <MDBIcon fab icon="linkedin" size="3x" />
                 </a>
-                <a className="myFooterLink" href="#!">
+                <a
+                  className="myFooterLink" 
+                  href="https://www.facebook.com/Kraken-Koders-108938530800606"
+                  >
                   {" "}
-                  <MDBIcon fab icon="twitter-square" size="3x" />
+                  <MDBIcon fab icon="facebook-square" size="3x" />
                 </a>
                 <a className="myFooterLink" href="#!">
                   {" "}
                   <MDBIcon fab icon="github-square" size="3x" />
                 </a>
-                <div className="damnDiscordIconWrapper" style={{ marginTop: "3px" }}>
-                <a className="myFooterLink" href="#!" >
+                <div className="damnDiscordIconWrapper"
+                /*Tried to do without inline css but doesn't have an effect so inline is a must */
+                style={{ paddingTop: "3px" }}
+                >
+                <a className="myFooterLink" href="https://discord.gg/uBtFRSa" >
                   {" "}
                   <MDBIcon fab icon="discord" size="3x" />
                 </a>
