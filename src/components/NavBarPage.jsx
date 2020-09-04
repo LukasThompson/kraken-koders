@@ -57,10 +57,7 @@ class NavbarPage extends Component {
                 <MDBNavLink to="/">Home</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink to="#!">About</MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBNavLink to="#!">Activity</MDBNavLink>
+                <MDBNavLink to="#about">About</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
                 <MDBDropdown>
