@@ -7,6 +7,7 @@ import {
   MDBCardText,
   MDBCol,
   MDBIcon,
+  MDBCardHeader,
 } from "mdbreact";
 
 function TeamMemberCard(props) {
@@ -20,9 +21,9 @@ function TeamMemberCard(props) {
         />
         <MDBCardBody>
           <MDBCardTitle>{props.member.name}</MDBCardTitle>
-          <MDBCardText>
-            <h5>{props.member.position}</h5>
-          </MDBCardText>
+          <MDBCardHeader>
+            {props.member.position}
+          </MDBCardHeader>
           <MDBCardText>{props.member.profile}</MDBCardText>
           <MDBCardText>
             <a className="myFooterLink" href={props.member.linkedIn}>
