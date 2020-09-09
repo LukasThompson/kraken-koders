@@ -95,7 +95,7 @@ class HomePage extends React.Component {
           position: "Developer",
           linkedIn: "https://www.linkedin.com/company/kraken-koders/",
           github: "https://github.com/",
-          profile: "",
+          profile: "After COVID-19 wiped out business in the Events industry for months on end I went to Sabio Full Stack Web Development Bootcamp. It was an awesome experience! People who know me have always told me I should get into something in tech and now I know why they said that. I love learning how to manipulate applications with words, characters and functions! Motto- Never Stop Learnin'!",
         },
         // Still need Patrick's info
         {
