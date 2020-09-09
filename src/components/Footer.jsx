@@ -46,7 +46,10 @@ const Footer = () => {
                     style={{ marginRight: "2px" }}
                   />
                 </a>
-                <a className="myFooterLink" href="#!">
+                <a
+                  className="myFooterLink" 
+                  href="https://www.facebook.com/Kraken-Koders-108938530800606"
+                  >
                   {" "}
                   <MDBIcon
                     fab
@@ -63,6 +66,19 @@ const Footer = () => {
                     size="3x"
                     style={{ marginRight: "2px" }}
                   />
+                  <MDBIcon fab icon="facebook-square" size="3x" />
+                </a>
+                <a className="myFooterLink" href="#!">
+                  {" "}
+                  <MDBIcon fab icon="github-square" size="3x" />
+                </a>
+                <div className="damnDiscordIconWrapper"
+                /*Tried to do without inline css but doesn't have an effect so inline is a must */
+                style={{ paddingTop: "3px" }}
+                >
+                <a className="myFooterLink" href="https://discord.gg/uBtFRSa" >
+                  {" "}
+                  <MDBIcon fab icon="discord" size="3x" />
                 </a>
                 <div
                   className="damnDiscordIconWrapper"
