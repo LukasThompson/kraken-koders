@@ -11,7 +11,7 @@ import {
 
 function TeamMemberCard(props) {
   return (
-    <MDBCol style={{ margin: "20px" }}>
+    <MDBCol style={{ margin: "20px" }} className="d-flex align-items-stretch">
       <MDBCard style={{ width: "18rem" }}>
         <MDBCardImage
           className="img-fluid img-avatar"
@@ -34,12 +34,6 @@ function TeamMemberCard(props) {
               {" "}
               <MDBIcon fab icon="github-square" size="3x" />
             </a>
-            <div className="damnDiscordIconWrapper" style={{marginTop: "4px" }}>
-                <a className="myFooterLink" href="#!" >
-                  {" "}
-                  <MDBIcon fab icon="discord" size="3x" />
-                </a>
-                </div>
           </MDBCardText>
         </MDBCardBody>
       </MDBCard>

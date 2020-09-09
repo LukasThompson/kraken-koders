@@ -11,13 +11,13 @@ import {
 
 const ProjectCardPage = (props) => {
   return (
-    <MDBCol>
+    <MDBCol className="d-flex align-items-stretch">
       <MDBCard style={{ width: "18rem" }}>
         <MDBCardImage className="img-fluid" src={props.project.imgSrc} waves />
         <MDBCardBody>
           <MDBCardTitle>{props.project.name}</MDBCardTitle>
           <MDBCardText>{props.project.description}</MDBCardText>
-          <MDBBtn color="deep-orange" href="#">
+          <MDBBtn color="deep-orange" href={props.project.link}>
             Go To Project
           </MDBBtn>
         </MDBCardBody>

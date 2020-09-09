@@ -12,7 +12,9 @@ const Footer = () => {
                 <img
                   className="footerLogo"
                   alt=""
-                  src="/media/KrakenKodersFooter.png"
+                  src="/media/KrakenKodersFooterLGTrans.png"
+                  height="450px"
+                  width="450px"
                 ></img>
               </div>
             </MDBCol>
@@ -37,21 +39,44 @@ const Footer = () => {
                   href="https://www.linkedin.com/company/kraken-koders/"
                 >
                   {" "}
-                  <MDBIcon fab icon="linkedin" size="3x" />
+                  <MDBIcon
+                    fab
+                    icon="linkedin"
+                    size="3x"
+                    style={{ marginRight: "2px" }}
+                  />
                 </a>
                 <a className="myFooterLink" href="#!">
                   {" "}
-                  <MDBIcon fab icon="twitter-square" size="3x" />
+                  <MDBIcon
+                    fab
+                    icon="twitter-square"
+                    size="3x"
+                    style={{ marginRight: "2px" }}
+                  />
                 </a>
                 <a className="myFooterLink" href="#!">
                   {" "}
-                  <MDBIcon fab icon="github-square" size="3x" />
+                  <MDBIcon
+                    fab
+                    icon="github-square"
+                    size="3x"
+                    style={{ marginRight: "2px" }}
+                  />
                 </a>
-                <div className="damnDiscordIconWrapper" style={{ marginTop: "3px" }}>
-                <a className="myFooterLink" href="#!" >
-                  {" "}
-                  <MDBIcon fab icon="discord" size="3x" />
-                </a>
+                <div
+                  className="damnDiscordIconWrapper"
+                  style={{ marginTop: "3px" }}
+                >
+                  <a className="myFooterLink" href="#!">
+                    {" "}
+                    <MDBIcon
+                      fab
+                      icon="discord"
+                      size="3x"
+                      style={{ marginRight: "2px" }}
+                    />
+                  </a>
                 </div>
               </div>
             </MDBCol>

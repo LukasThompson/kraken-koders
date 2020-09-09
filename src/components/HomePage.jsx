@@ -57,22 +57,25 @@ class HomePage extends React.Component {
       // Will replace with Ajax Call to .json Data Files
       let projectsArray = [
         {
-          name: "Space Game Clone",
-          description: "Unity3D - C#",
-          imgSrc: "media/SpaceGame.png",
+          name: "WebMall Blogs",
+          description: "React.js, C#, .Net Core, SQL",
+          imgSrc: "media/WebMallBlogs.png",
           id: 1,
+          link: "https://webmall.azurewebsites.net/blogs",
         },
         {
-          name: "Coming Soon",
-          description: "Coming Soon",
-          imgSrc: "media/comingsoon.jpg",
+          name: "WebMall Scheduler",
+          description: "React.js, C#, .Net Core, SQL, Google Maps API",
+          imgSrc: "media/WebMallScheduler.png",
           id: 2,
+          link: "https://webmall.azurewebsites.net/schedules",
         },
         {
-          name: "Coming Soon",
-          description: "Coming Soon",
-          imgSrc: "media/comingsoon.jpg",
+          name: "Huskey Developers",
+          description: "HTML, CSS, Bootstrap",
+          imgSrc: "media/HuskyDev.png",
           id: 3,
+          link: "http://huskydevelopers.epizy.com/",
         },
       ];
       let mappedProject = projectsArray.map(this.mapProjects);
@@ -81,7 +84,7 @@ class HomePage extends React.Component {
         {
           id: 1,
           name: "Lukas Thompson",
-          imgSrc: "media/MEBleh.png",
+          imgSrc: "media/MEBlehBW.png",
           position: "Developer",
           linkedIn: "https://www.linkedin.com/in/lukas-thompson-2b7b611aa/",
           github: "https://github.com/LukasThompson",
@@ -91,20 +94,21 @@ class HomePage extends React.Component {
         {
           id: 2,
           name: "Rob Rukavina",
-          imgSrc: "media/rob.jpg",
+          imgSrc: "media/RobBW.png",
           position: "Developer",
-          linkedIn: "https://www.linkedin.com/company/kraken-koders/",
-          github: "https://github.com/",
+          linkedIn: "https://www.linkedin.com/in/robert-rukavina-9bb219187/",
+          github: "https://github.com/RobRukavina",
           profile: "",
         },
         {
           id: 3,
           name: "Patrick Yarbourgh",
-          imgSrc: "media/babysquid.png",
+          imgSrc: "media/Pat.png",
           position: "Sales / Jr Developer",
           linkedIn: "https://www.linkedin.com/company/kraken-koders/",
           github: "https://github.com/",
-          profile: "",
+          profile:
+            "I am currently enrolled in school with a degree focus in programming. I also provide a service in sales for Kraken Koders with some of the most competitive prices available on the market.",
         },
       ];
       let mappedTeam = teamArray.map(this.mapTeam);
